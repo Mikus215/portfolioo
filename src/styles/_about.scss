@@ -1,0 +1,96 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin: 0 1rem;
+    margin-top: 30rem;
+    @media(min-width: 992px){
+        margin-top: 12rem;
+        flex-direction: row;
+    }
+    &__img-developer{
+        position: relative;
+        width: 100%;
+        @media(min-width: 992px){
+            width: 40%;
+        }
+    }
+
+    &__developer-line-pointer{
+        display: none;
+        @media(min-width: 992px) {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: -50px;
+        }
+        @media(min-width: 1190px){
+            left: 180px;
+            top: -75px;
+        }
+        @media(min-width: 1380px){
+            left: 250px;
+            top: -70px;
+        }
+    }
+
+    &__text-button{
+        width: 160px;
+        height: 50px;
+        border-radius: .3rem;
+        border: none;
+        color: $primary-color;
+        background: $primary-background-btn;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+    &__developer-background{
+        position: absolute;
+        @media(max-width: 992px){
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+        }
+    }  
+
+    &__text{
+        width: 100%;
+        @media(min-width: 992px){
+            width: 60%;
+        }
+    }
+    &__text-title{
+        margin-bottom: 2rem;
+        text-align: center;
+        @media(min-width: 576px){
+            text-align: left;
+        }
+    }
+
+    &__text-description{
+        margin: .3rem 0 .5rem 0;
+    }
+
+    &__left-background{
+        position: absolute;
+        top: 550px;
+        left: 0;
+        z-index: -15;
+    }
+
+    &__text-skills{
+        margin: 1rem 0 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__text-skill{
+        border: 2px solid $second-color;
+        padding: .3rem .5rem;
+        border-radius: 1rem;
+    }
+}

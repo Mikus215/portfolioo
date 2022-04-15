@@ -1,0 +1,110 @@
+.contact{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5rem 1rem 0 1rem;
+    @media(min-width: 992px){
+        flex-direction: row;
+    }
+    &__info{
+        width: 100%;
+        @media(min-width: 992px){
+            width: 50%;
+            margin-left: 2rem;
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: $form-background;
+        border-radius: .7rem;
+        @media(min-width: 992px){
+            width: 50%;
+        }
+        input, textarea{
+            padding: .7rem;
+        }
+    }
+    &__info-title{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        @media(min-width: 992px){
+            text-align: left;
+        }
+    }
+    &__info-box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $second-color;
+        margin: 1rem 0;
+        a{
+            color: $second-color;
+        }
+    }
+    &__form-box{
+        display: flex;
+        justify-content: center;
+        gap: .3rem;
+        margin-top: 2rem;
+        width: 80%;
+        input{
+            width: 50%;
+        }
+    }
+
+    &__form-subject{
+        width: 80%;
+        margin: .3rem 0;
+    }
+
+    &__form-message{
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+    }
+
+    &__form-button{
+        padding: .5rem .7rem;
+        border-radius: .3rem;
+        border: none;
+        color: $primary-color;
+        background: rgb(49,36,133);
+        background: linear-gradient(90deg, rgba(49,36,133,1) 0%, rgba(14,20,43,1) 0%);
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-top: 2rem;
+        margin-bottom: .3rem;
+        @media(min-width: 992px){
+            margin-bottom: 0;
+        }
+    }
+
+    &__info-download-button{
+        padding: .7rem 1rem;
+        border-radius: .3rem;
+        border: none;
+        color: $primary-color;
+        background: $primary-background-btn;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    &__info-download-button{
+        transition: color 0.2s ease;
+        &:hover{
+            color: $second-color;
+        }
+    }
+
+    &__info-download-link{
+        text-decoration: none;
+        color: white;
+    }
+}

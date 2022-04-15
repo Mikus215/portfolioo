@@ -1,0 +1,130 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25rem 1rem 0 1rem;
+    overflow: hidden;
+    @media(min-width: 992px){
+        margin-top: 10rem;
+    }
+    &__blur15{
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        top: 2500px;
+        width: 100%;
+        @media(min-width: 576px){
+            width: 750px;
+            top: 1400px;
+        }
+    }
+    &__blur16{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        @media(min-width: 576px){
+            width: 750px;
+            top: 500px;
+        }
+    }
+    &__container-project-img{
+        width: 100%;
+    }
+    &__container-project-img{
+        width: 100%;
+        @media(min-width: 992px){
+            width: 40%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__container-project-box{
+        width: 100%;
+        @media(min-width: 992px){
+            width: 60%;
+        }
+    }
+    &__title{
+        text-transform: uppercase;
+    }
+    &__img-background{
+        position: absolute;
+        right: 0;
+        top: 900px;
+        z-index: -5;
+    }
+
+    &__buttons{
+        margin: 2rem 0 3rem 0;
+    }
+
+    &__button, &__container-project-btn{
+        padding: .7rem 1rem;
+        border-radius: .3rem;
+        border: none;
+        color: $primary-color;
+        background: $primary-background-btn;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    &__button{
+        transition: color 0.2s ease;
+        &:hover{
+            color: $second-color;
+        }
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @media(min-width: 576px){
+            flex-direction: row;
+        }
+    }
+    &__container-project{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        img{
+            cursor: pointer;
+        }
+        @media(min-width: 992px){
+            flex-direction: row;
+        }
+    }
+    &__container-project-title{
+        text-align: center;
+        margin-bottom: 1rem;
+        @media(min-width: 576px){
+            text-align: left;
+        }
+    }
+    &__container-project-description{
+        margin-bottom: 1rem;
+        line-height: 150%;
+    }
+    &__container-project-box{
+        @media(min-width: 992px){
+            margin-left: 1rem;
+        }
+    }
+    &__container-project-controllers{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        @media(min-width: 992px){
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}
+.no-active{
+    background: none;
+}
